@@ -1,0 +1,34 @@
+name: Tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  python:
+    name: Python ${{ matrix.python }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.11", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-python@v7.1.0
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Compile Python helpers
+        run: python -m compileall -q skills
+      - name: Exercise HTTP/SSE and diagnosis behavior
+        run: python -m unittest discover -s tests -v
+      - name: Check live-operation entry points
+        run: |
+          python skills/ascend-llm-benchmark/scripts/benchmark.py --help
+          python skills/ascend-server-diagnostics/scripts/diagnose.py --help
+          python skills/ascend-server-diagnostics/scripts/hbm_check.py --help
+          python skills/ascend-server-diagnostics/scripts/hccl_microbench.py --help

@@ -1,0 +1,4 @@
+interface:
+  display_name: "昇腾服务器验收诊断"
+  short_description: "分层检查昇腾显存、通信和运行环境，整理故障证据并验证修复结果"
+  default_prompt: "使用 $ascend-server-diagnostics 通过 SSH 实时检查指定服务器的显存、通信链路和运行环境，先只读巡检，给出异常定位与原始证据。"

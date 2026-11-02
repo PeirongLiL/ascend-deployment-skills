@@ -1,0 +1,21 @@
+{
+  "base_url": "http://127.0.0.1:8000",
+  "model": "kimi-k3",
+  "endpoint": "completions",
+  "api_key_env": "LLM_BENCH_API_KEY",
+  "service_max_model_len": 262144,
+  "cache_mode": "isolated",
+  "cache_salt_supported": false,
+  "temperature": 0,
+  "seed": 42,
+  "strict_output": true,
+  "request_timeout_seconds": 300,
+  "maximum_runtime_seconds": 1800,
+  "max_consecutive_failures": 3,
+  "warmup_requests": 8,
+  "warmup_output_tokens": 1024,
+  "repeats": 1,
+  "slo": {"ttft_seconds": 5, "tpot_seconds": 0.2},
+  "deployment": {"topology": "unknown", "image_id": "unknown", "prefix_caching": "unknown", "mtp": "unknown"},
+  "cases": [{"input_tokens": 8192, "output_tokens": 1024, "concurrency": 4, "requests": 16}]
+}

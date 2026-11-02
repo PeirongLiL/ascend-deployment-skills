@@ -1,0 +1,20 @@
+# Runtime outputs may contain addresses, serial numbers, prompts or service metadata.
+node_modules/
+__pycache__/
+*.py[cod]
+.DS_Store
+.env
+.env.*
+!.env.example
+current.json
+.venv/
+results/
+outputs/
+artifacts/
+*.xlsx
+*.jsonl
+*.log
+*.pem
+*.key
+id_rsa*
+id_ed25519*

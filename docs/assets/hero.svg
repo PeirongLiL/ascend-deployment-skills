@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="440" viewBox="0 0 1280 440" role="img" aria-labelledby="title desc">
+  <title id="title">Ascend Deployment Skills</title>
+  <desc id="desc">Live model benchmarks and evidence-based server diagnostics, distilled from deployment practice.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b1429"/><stop offset="1" stop-color="#152a45"/></linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M 32 0 L 0 0 0 32" fill="none" stroke="#7dd3fc" stroke-opacity=".055" stroke-width="1"/></pattern>
+  </defs>
+  <rect width="1280" height="440" rx="22" fill="url(#bg)"/>
+  <rect width="1280" height="440" rx="22" fill="url(#grid)"/>
+  <rect x="58" y="49" width="5" height="24" rx="2" fill="#38bdf8"/>
+  <text x="77" y="67" fill="#8db1d6" font-family="Arial,sans-serif" font-size="15" font-weight="700" letter-spacing="3">FROM DEPLOYMENT PRACTICE TO REUSABLE SKILLS</text>
+  <text x="58" y="135" fill="#f8fafc" font-family="Arial,sans-serif" font-size="55" font-weight="750" letter-spacing="-1">Ascend Deployment Skills</text>
+  <text x="60" y="174" fill="#b8cbe1" font-family="Arial,sans-serif" font-size="20">Live benchmarks. Evidence-based diagnostics. Traceable results.</text>
+  <g transform="translate(58,214)">
+    <rect width="568" height="156" rx="14" fill="#10243e" stroke="#2f5275"/>
+    <rect x="22" y="24" width="42" height="42" rx="10" fill="#1c3d5c"/>
+    <path d="M33 53v-8m10 8V36m10 17V31" stroke="#65d3ff" stroke-width="3.5" stroke-linecap="round"/>
+    <text x="83" y="45" fill="#f1f7ff" font-family="Arial,sans-serif" font-size="23" font-weight="700">Live Serving Benchmark</text>
+    <text x="83" y="70" fill="#8fafce" font-family="Arial,sans-serif" font-size="15">ascend-llm-benchmark</text>
+    <text x="24" y="108" fill="#c4d5e8" font-family="Arial,sans-serif" font-size="16">Concurrency · Context · Cache · Latency</text>
+    <text x="24" y="135" fill="#65d3ff" font-family="Arial,sans-serif" font-size="14">STREAMING REQUESTS  →  METRICS + STANDARD XLSX</text>
+  </g>
+  <g transform="translate(650,214)">
+    <rect width="572" height="156" rx="14" fill="#102c37" stroke="#2a6265"/>
+    <rect x="22" y="24" width="42" height="42" rx="10" fill="#17464b"/>
+    <circle cx="41" cy="41" r="10" fill="none" stroke="#5eead4" stroke-width="3"/>
+    <path d="M49 49l8 8" stroke="#5eead4" stroke-width="3.5" stroke-linecap="round"/>
+    <text x="83" y="45" fill="#f1f7ff" font-family="Arial,sans-serif" font-size="23" font-weight="700">Live Server Diagnostics</text>
+    <text x="83" y="70" fill="#91bdbb" font-family="Arial,sans-serif" font-size="15">ascend-server-diagnostics</text>
+    <text x="24" y="108" fill="#c4dedc" font-family="Arial,sans-serif" font-size="16">NPU / HBM · RoCE / HCCL · Storage · Runtime</text>
+    <text x="24" y="135" fill="#5eead4" font-family="Arial,sans-serif" font-size="14">READ-ONLY SSH  →  FINDINGS + RAW EVIDENCE</text>
+  </g>
+  <text x="60" y="410" fill="#7595b5" font-family="Arial,sans-serif" font-size="13" letter-spacing="1">KIMI · DEEPSEEK · OPENAI-COMPATIBLE SERVING · ASCEND INFRASTRUCTURE</text>
+</svg>

@@ -1,0 +1,4 @@
+interface:
+  display_name: "昇腾模型性能测评"
+  short_description: "连接在线模型服务，实时测量吞吐与响应时延并生成标准化性能报表"
+  default_prompt: "使用 $ascend-llm-benchmark 检查指定在线模型服务，按我的输入输出长度和并发条件执行性能测试，生成标准 Excel。"
